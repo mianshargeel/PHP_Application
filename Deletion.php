@@ -1,4 +1,5 @@
-<?php 
+<?php
+require('mysql.php');
 	$size = sizeof($_POST); //that is size of elements inputted for deletion
 	$j = 1;
 	for ($i = 1; $i <= $size; $i++,$j++) {

@@ -1,5 +1,5 @@
 <?php 
-	$con = mysqli_connect('localhost', 'root', 'root');
+	require('mysql.php');
 	mysqli_select_db($con, 'BRM_DB');
 
 	$size = sizeof($_POST);

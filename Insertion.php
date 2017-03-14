@@ -1,10 +1,11 @@
 <?php 
+require('mysql.php');
+
 $a = $_POST['B_Title'];
 $b = $_POST['B_Price'];
 $c = $_POST['B_Auther'];
 $d = $_POST['B_Addition'];
 
-$con = mysqli_connect('localhost', 'root', 'root');
 $x = mysqli_select_db($con, 'BRM_DB');
 
 if (!$x) {

@@ -1,10 +1,5 @@
 <?php 
-	$con = mysqli_connect('localhost', 'root', 'root');
-	mysqli_select_db($con, 'BRM_DB');
-	$q1 = "select * from Book";
-	$result = mysqli_query($con, $q1);
-	$num = mysqli_num_rows($result); //to get to know how much rows in $result
-	mysqli_close($con);
+	require('mysql.php');
 ?>
 
 <!DOCTYPE html>
