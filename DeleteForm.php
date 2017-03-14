@@ -1,5 +1,10 @@
-<?php
-require('mysql.php');
+<?php 
+	require('mysql.php');
+	mysqli_select_db($con, 'BRM_DB');
+	$q = "select * from Book";
+	$result = mysqli_query($con, $q);
+	$num = mysqli_num_rows($result);
+	mysqli_close($con);
 ?>
 <!DOCTYPE html>
 	<html>

@@ -1,5 +1,10 @@
 <?php 
 	require('mysql.php');
+	mysqli_select_db($con, 'BRM_DB');
+	$q1 = "select * from Book";
+	$result = mysqli_query($con, $q1);
+	$num = mysqli_num_rows($result); //to get to know how much rows in $result
+	mysqli_close($con);
 ?>
 
 <!DOCTYPE html>
@@ -36,6 +41,11 @@
 
 				<td> <input type="test" name="B_Addition<?php echo $i; ?>" value = "<?php echo $row['B_Addition'] ?>"/> </td>
 			</tr>
+
+			<?php
+			}
+
+			?>
 
 		</table>
 			<tr> <input type="submit" value="Update" /> </tr>

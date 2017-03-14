@@ -15,7 +15,7 @@ if (!$x) {
 }
 
 $q = "insert into Book(B_Title,B_Price,B_Auther,B_Addition) values ('$a',$b,'$c','$d')";
-$status = mysqli_query($con, $q);
+$status = mysqli_query($conn, $q);
 
 if (!$status) {
 	echo " DATA Not Inserted";
