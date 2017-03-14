@@ -15,11 +15,11 @@ if ($conn->connect_error) {
 $q = "insert into Book(B_Title,B_Price,B_Auther,B_Addition) values ('$a',$b,'$c','$d')";
 $status = mysqli_query($conn, $q);
 
-if (!$status) {
-	echo " DATA Not Inserted";
-} else {
-	echo " Inserted";
-}
+// if (!$status) {
+// 	echo " DATA Not Inserted";
+// } else {
+// 	echo " Inserted";
+// }
 
 mysqli_close($con);
 
