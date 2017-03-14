@@ -12,11 +12,9 @@ require('mysql.php');
 		}
 	}
 	
-	mysqli_select_db($con, 'BRM_DB');
-
 	for ($k = 1; $k <= $size; $k++ ) {
 		$q = "delete from Book Where B_ID =".$id[$k];
-		mysqli_query($con, $q);
+		mysqli_query($conn, $q);
 	}
 
 	mysqli_close($con);

@@ -6,10 +6,8 @@ $b = $_POST['B_Price'];
 $c = $_POST['B_Auther'];
 $d = $_POST['B_Addition'];
 
-$x = mysqli_select_db($con, 'BRM_DB');
-
-if (!$x) {
-	echo "NOt Connected ";
+if ($conn->connect_error) {
+  	echo "Not Connected ";
 } else {
 	echo "Connected ";
 }
