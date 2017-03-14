@@ -1,6 +1,5 @@
 <?php 
 	require('mysql.php');
-	mysqli_select_db($conn, 'BRM_DB');
 
 	$size = sizeof($_POST);
 	$record = $size/5;      //number of column = 5 in book table
