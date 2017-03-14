@@ -37,11 +37,6 @@
 				<td> <input type="test" name="B_Addition<?php echo $i; ?>" value = "<?php echo $row['B_Addition'] ?>"/> </td>
 			</tr>
 
-			<?php
-			}
-
-			?>
-
 		</table>
 			<tr> <input type="submit" value="Update" /> </tr>
 	</form>
