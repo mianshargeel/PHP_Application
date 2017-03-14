@@ -21,7 +21,7 @@ $status = mysqli_query($conn, $q);
 // 	echo " Inserted";
 // }
 
-mysqli_close($con);
+mysqli_close($conn);
 
 ?>
 
@@ -34,7 +34,7 @@ mysqli_close($con);
 
 		<h1> Book Record Management </h1>
 		<p> <?php 
-				if ( $status == 1 ) 
+				if ( $status == 1 )	//wtf? 
 					echo "Record Inserted";
 				else 
 					echo "Insertion Failed"; 
@@ -42,7 +42,7 @@ mysqli_close($con);
 		</p>
 
 		do u want to insert more record ? <a href="InsertForm.php">Click Here</a><br/> <!-- Aunchor tag -->
-		Go to the Home Page <a href="Home.php">Click Here</a> <!-- Aunchor tag -->
+		Go to the Home Page <a href="/">Click Here</a> <!-- Aunchor tag -->
 
 	</body>
 </html>
