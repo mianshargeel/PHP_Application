@@ -1,6 +1,7 @@
 <?php 
 require('mysql.php');
 
+print("$url");
 $a = $_POST['B_Title'];
 $b = $_POST['B_Price'];
 $c = $_POST['B_Auther'];
@@ -42,12 +43,7 @@ mysqli_close($conn);
 		</p>
 
 		do u want to insert more record ? <a href="InsertForm.php">Click Here</a><br/> <!-- Aunchor tag -->
-<<<<<<< HEAD
-		Go to the Home Page <a href="index.php">Click Here</a> <!-- Aunchor tag -->
-=======
 		Go to the Home Page <a href="/">Click Here</a> <!-- Aunchor tag -->
->>>>>>> bb002dae8013a58c56a227f1dd18f7b3f8d3fd86
-
 	</body>
 </html>
 
