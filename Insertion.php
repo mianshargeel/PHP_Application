@@ -1,7 +1,7 @@
 <?php 
 require('mysql.php');
 
-print("$url");
+print("$conn");
 $a = $_POST['B_Title'];
 $b = $_POST['B_Price'];
 $c = $_POST['B_Auther'];
