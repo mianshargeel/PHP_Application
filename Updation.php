@@ -48,7 +48,7 @@
 			?> 
 		</p>
 
-		Go Back to Home Page <a href="Home.php">Click Here</a> <!-- Aunchor tag -->
+		Go Back to Home Page <a href="index.php">Click Here</a> <!-- Aunchor tag -->
 
 	</body>
 </html>

@@ -100,7 +100,7 @@
 	   	       </p>
 	   </article>
 
-	   <footer> Copywrite @copy: FEP  </footer>
+	   <footer> Copywrite @copy:Poma  </footer>
 	      
 	  </div>
 	</body>

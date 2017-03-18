@@ -50,6 +50,6 @@
 		</table>
 			<tr> <input type="submit" value="Update" /> </tr>
 	</form>
-
+		Go Back To Hame Page <a style="color: blue" href="index.php">CLICK HERE</a>
 	</body>
 </html>

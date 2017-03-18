@@ -43,7 +43,7 @@ mysqli_close($con);
 		</p>
 
 		do u want to insert more record ? <a href="InsertForm.php">Click Here</a><br/> <!-- Aunchor tag -->
-		Go to the Home Page <a href="Home.php">Click Here</a> <!-- Aunchor tag -->
+		Go to the Home Page <a href="index.php">Click Here</a> <!-- Aunchor tag -->
 
 	</body>
 </html>

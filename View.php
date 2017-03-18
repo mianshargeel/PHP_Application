@@ -14,7 +14,7 @@
 		<link rel="stylesheet" href="ViewStyle.css" />  <!-- using .css file here -->
 	</head>
 	<body>
-		<h1> Book Record Management </h1>
+		<h1 style="color: blue"> Book Record Management </h1>
 		<table id = "view_table">
 			<tr>
 				<th> B_ID </th>
@@ -43,6 +43,7 @@
 			?>
 
 		</table>
+		Go Back to Home Page <a style="color: blue" href="index.php">CLICK HERE</a>
 
 	</body>
 </html>
