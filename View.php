@@ -1,8 +1,8 @@
 <?php 
-	$con = mysqli_connect('localhost', 'root', 'root');
-	mysqli_select_db($con, 'BRM_DB');
+	require('mysql.php');
+	mysqli_select_db($conn, 'BRM_DB');
 	$q1 = "select * from Book";
-	$result = mysqli_query($con, $q1);
+	$result = mysqli_query($conn, $q1);
 	$num = mysqli_num_rows($result); //to get to know how much rows in $result
 	mysqli_close($con);
 ?>

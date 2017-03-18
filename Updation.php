@@ -1,6 +1,6 @@
 <?php 
-	$con = mysqli_connect('localhost', 'root', 'root');
-	mysqli_select_db($con, 'BRM_DB');
+	require('mysql.php');
+	mysqli_select_db($conn, 'BRM_DB');
 
 	$size = sizeof($_POST);
 	$record = $size/5;      //number of column = 5 in book table
@@ -28,10 +28,10 @@
 		$q = "update Book Set B_Title = '$b_title[$i]', B_Price = $b_price[$i], 
 		B_Auther = '$b_auther[$i]', B_Addition = '$b_addition[$i]' Where B_ID = $b_id[$i]";
         //Keeping value of all columns or fields in there arrays
-		mysqli_query($con, $q);
+		mysqli_query($conn, $q);
 	}
 
-	mysqli_close($con);
+	mysqli_close($conn);
 ?>
 
 <!DOCTYPE html>

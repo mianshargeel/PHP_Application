@@ -1,28 +1,27 @@
 <?php 
+require('mysql.php');
+
 $a = $_POST['B_Title'];
 $b = $_POST['B_Price'];
 $c = $_POST['B_Auther'];
 $d = $_POST['B_Addition'];
 
-$con = mysqli_connect('localhost', 'root', 'root');
-$x = mysqli_select_db($con, 'BRM_DB');
-
-if (!$x) {
-	echo "NOt Connected ";
+if ($conn->connect_error) {
+  	echo "Not Connected ";
 } else {
 	echo "Connected ";
 }
 
 $q = "insert into Book(B_Title,B_Price,B_Auther,B_Addition) values ('$a',$b,'$c','$d')";
-$status = mysqli_query($con, $q);
+$status = mysqli_query($conn, $q);
 
-if (!$status) {
-	echo " DATA Not Inserted";
-} else {
-	echo " Inserted";
-}
+// if (!$status) {
+// 	echo " DATA Not Inserted";
+// } else {
+// 	echo " Inserted";
+// }
 
-mysqli_close($con);
+mysqli_close($conn);
 
 ?>
 
@@ -35,7 +34,7 @@ mysqli_close($con);
 
 		<h1> Book Record Management </h1>
 		<p> <?php 
-				if ( $status == 1 ) 
+				if ( $status == 1 )	//wtf? 
 					echo "Record Inserted";
 				else 
 					echo "Insertion Failed"; 
@@ -43,7 +42,11 @@ mysqli_close($con);
 		</p>
 
 		do u want to insert more record ? <a href="InsertForm.php">Click Here</a><br/> <!-- Aunchor tag -->
+<<<<<<< HEAD
 		Go to the Home Page <a href="index.php">Click Here</a> <!-- Aunchor tag -->
+=======
+		Go to the Home Page <a href="/">Click Here</a> <!-- Aunchor tag -->
+>>>>>>> bb002dae8013a58c56a227f1dd18f7b3f8d3fd86
 
 	</body>
 </html>

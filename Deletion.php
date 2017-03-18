@@ -1,4 +1,5 @@
-<?php 
+<?php
+require('mysql.php');
 	$size = sizeof($_POST); //that is size of elements inputted for deletion
 	$j = 1;
 	for ($i = 1; $i <= $size; $i++,$j++) {
@@ -10,13 +11,10 @@
 			$i--;
 		}
 	}
-
-	$con = mysqli_connect('localhost', 'root', 'root');
-	mysqli_select_db($con, 'BRM_DB');
-
+	
 	for ($k = 1; $k <= $size; $k++ ) {
 		$q = "delete from Book Where B_ID =".$id[$k];
-		mysqli_query($con, $q);
+		mysqli_query($conn, $q);
 	}
 
 	mysqli_close($con);
