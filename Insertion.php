@@ -1,11 +1,11 @@
 <?php 
 require('mysql.php');
 
-print("$conn");
+//print("$conn");
 $a = $_POST['B_Title'];
 $b = $_POST['B_Price'];
 $c = $_POST['B_Auther'];
-$d = $_POST['B_Addition'];
+// $d = $_POST['B_Addition'];
 
 if ($conn->connect_error) {
   	echo "Not Connected ";
